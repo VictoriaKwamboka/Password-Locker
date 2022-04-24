@@ -1,6 +1,4 @@
-from platform import platform
-
-from argon2 import PasswordHasher
+import pyperclip
 
 
 class User:
@@ -76,5 +74,13 @@ class LogIn():
             if login.platform == platform:
                 return login
 
-
+    @classmethod
+    def copy_password(cls, platform):
+        '''
+        this paperclip function copies the password for a specific login usinf pyperclip
+        '''
+        found_login = LogIn.find_login(platform)
+        pyperclip.copy(found_login.password)
+    
+  
     
