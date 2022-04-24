@@ -67,4 +67,14 @@ class LogIn():
         '''
         LogIn.logins.remove(self)
 
+    @classmethod
+    def find_login(cls, platform):
+        '''
+        this method takes in the platform name and returns the log in details associated with that platform
+        '''
+        for login in cls.logins:
+            if login.platform == platform:
+                return login
+
+
     

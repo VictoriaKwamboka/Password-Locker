@@ -1,3 +1,4 @@
+from cgi import test
 import unittest
 from user import User
 from user import LogIn
@@ -84,7 +85,21 @@ class TestLogins(unittest.TestCase):
         
         self.new_login.delete_login()
         self.assertEqual(len(LogIn.logins),1)
-        
+
+    def test_find_login(self):
+        '''
+        tests the find_login method
+        '''
+        self.new_login.save_login()
+        test_log_in = LogIn('webmail', 'oraini', '090395kjg!')
+        test_log_in.save_login()
+
+        found_credential = LogIn.find_login('webmail')
+        self.assertEqual(found_credential.platform, test_log_in.platform)
+
+
+
+
 
 
 
