@@ -66,6 +66,17 @@ def check_truthy_login(platform):
 
     """
     return LogIn.truthy_login(platform)
+def gen_password():
+    '''
+    generates a random password for the user.
+    '''
+    rand_password=LogIn.generate_password()
+    return rand_password
+def copy_password(platform):
+    """
+    copies the password using pyperclip module
+    """
+    return LogIn.copy_password(platform)
 
 
 
