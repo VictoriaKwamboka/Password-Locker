@@ -43,7 +43,7 @@ class TestLogins(unittest.TestCase):
         cleans up after every test case
         '''
         LogIn.logins = []
-
+        
     def setUp(self):
         '''
         set up each test case before running
@@ -62,7 +62,18 @@ class TestLogins(unittest.TestCase):
         '''
         self.new_login.save_login()
         self.assertEqual(len(LogIn.logins),1)
-    
+
+    def test_save_multiple_platforms(self):
+        '''
+        method to test saving multiple platform log ins
+        '''
+        self.new_login.save_login()
+        test_log_in = LogIn('webmail', 'oraini', '090395kjg!')
+        test_log_in.save_login()
+        self.assertEqual(len(LogIn.logins),2)
+        
+
+
 
 
    
