@@ -70,8 +70,21 @@ class TestLogins(unittest.TestCase):
         self.new_login.save_login()
         test_log_in = LogIn('webmail', 'oraini', '090395kjg!')
         test_log_in.save_login()
+
         self.assertEqual(len(LogIn.logins),2)
+
+    def test_delete_login(self):
+        '''
+        check if log in has been removed from the list for log ins
+        '''
+        self.new_login.save_login()
+        test_log_in = LogIn('webmail', 'oraini', '090395kjg!')
+        test_log_in.save_login()
+
         
+        self.new_login.delete_login()
+        self.assertEqual(len(LogIn.logins),0)
+
 
 
 
