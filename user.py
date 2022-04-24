@@ -16,3 +16,9 @@ class User:
         saves the user
         '''
         User.list_of_users.append(self)
+    @classmethod
+    def display_users(cls):
+        '''
+        Displays the list of users in the class
+        '''
+        return cls.list_of_users
