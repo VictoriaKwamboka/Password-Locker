@@ -97,6 +97,7 @@ class LogIn():
         This method returns the list of log in details when called
         '''
         return cls.logins
+    
 
 
     

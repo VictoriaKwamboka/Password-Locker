@@ -107,6 +107,11 @@ class TestLogins(unittest.TestCase):
 
         found_login = LogIn.truthy_login('webmail')
         self.assertTrue(found_login)
+    def test_display_logins(self):
+        '''
+        Test if the display_logins method displays all logins as expected
+        '''
+        self.assertEqual(LogIn.display_logins(), LogIn.logins)
 
 
 
