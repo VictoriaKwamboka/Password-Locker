@@ -6,6 +6,7 @@ Not even stack overflow could help.
 # !/usr/bin/python3
 
 '''
+from platform import platform
 from user import LogIn, User
 
 def add_new_user(username, password):
@@ -30,5 +31,16 @@ def valid_user(username, password):
     '''
     login_user = LogIn.valid_user(username,password)
     return login_user
+def add_new_login(platform, username, password):
+    '''
+    adds log in details for a new user
+    '''
+    new_login = LogIn(platform, username, password)
+    return new_login
+def save_new_login(login):
+    '''
+    saves a new log in to the list of log ins
+    '''
+    login.save_login()
 
 
