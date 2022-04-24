@@ -91,6 +91,12 @@ class LogIn():
             if login.platform == platform:
                 return True
         return False
+    @classmethod
+    def display_logins(cls):
+        '''
+        This method returns the list of log in details when called
+        '''
+        return cls.logins
 
 
     
