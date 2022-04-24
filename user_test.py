@@ -96,6 +96,17 @@ class TestLogins(unittest.TestCase):
 
         found_credential = LogIn.find_login('webmail')
         self.assertEqual(found_credential.platform, test_log_in.platform)
+    
+    def test_truthy_login(self):
+        '''
+        A test method to test the truthy log in method on whethe the log in details exist or not
+        '''
+        self.new_login.save_login()
+        test_log_in = LogIn('webmail', 'oraini', '090395kjg!')
+        test_log_in.save_login()
+
+        found_login = LogIn.truthy_login('webmail')
+        self.assertTrue(found_login)
 
 
 
