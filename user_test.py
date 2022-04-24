@@ -43,6 +43,10 @@ class TestLogins(unittest.TestCase):
         set up each test case before running
         '''
         self.new_login = LogIn('Twitter', 'VickyMonari','nji@hj890')
+    def test_init(self):
+        self.assertEqual(self.new_login.platform,'Twitter' )
+        self.assertEqual(self.new_login.username,'VickyMonari')
+        self.assertEqual(self.new_login.password,'nji@hj890')
 
    
 

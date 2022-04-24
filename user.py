@@ -1,3 +1,8 @@
+from platform import platform
+
+from argon2 import PasswordHasher
+
+
 class User:
     '''
     This class generates new instances of a user
@@ -43,4 +48,13 @@ class LogIn():
             if(user.username == username and user.password == password):
                 val_user = user.username
         return val_user
+    def __init__(self, platform, username, password):
+
+        '''
+        initializes the details to be stored
+        '''
+        self.platform = platform
+        self.username = username
+        self.password = password
+        
     
