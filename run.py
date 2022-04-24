@@ -24,3 +24,11 @@ def display_user():
     display existing users
     '''
     return User.display_users()
+def valid_user(username, password):
+    '''
+    allows an existing user to log in
+    '''
+    login_user = LogIn.valid_user(username,password)
+    return login_user
+
+
