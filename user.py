@@ -61,5 +61,10 @@ class LogIn():
         method to save log in details of a user
         '''
         LogIn.logins.append(self)
+    def delete_login(self):
+        '''
+        method to delete a log in from the list of log ins
+        '''
+        LogIn.logins.remove(self)
 
     

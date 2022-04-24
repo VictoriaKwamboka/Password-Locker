@@ -38,6 +38,12 @@ class TestLogins(unittest.TestCase):
     '''
     define test cases for the logins class
     '''
+    def tearDown(self):
+        '''
+        cleans up after every test case
+        '''
+        LogIn.logins = []
+
     def setUp(self):
         '''
         set up each test case before running
@@ -56,6 +62,8 @@ class TestLogins(unittest.TestCase):
         '''
         self.new_login.save_login()
         self.assertEqual(len(LogIn.logins),1)
+    
+
 
    
 
