@@ -112,6 +112,8 @@ class TestLogins(unittest.TestCase):
         Test if the display_logins method displays all logins as expected
         '''
         self.assertEqual(LogIn.display_logins(), LogIn.logins)
+    
+   
 
 
 

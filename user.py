@@ -1,4 +1,6 @@
 import pyperclip
+import string
+import random
 
 
 class User:
@@ -97,7 +99,14 @@ class LogIn():
         This method returns the list of log in details when called
         '''
         return cls.logins
-    
+
+    def generate_password(stringLength=8):
+        '''
+        Using random and string modules to generate a random password that's 8 characters long
+        The password contains strings, special characters and numbers
+        '''
+        password = "~!@#$%^&*" + string.ascii_lowercase +string.ascii_uppercase
+        return ''.join(random.choice(password) for i in range(stringLength))
 
 
     
