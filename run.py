@@ -42,5 +42,18 @@ def save_new_login(login):
     saves a new log in to the list of log ins
     '''
     login.save_login()
+def display_login_details():
+    """
+    returns all saved login details
+    """
+    return LogIn.display_logins()
+
+def delete_login(login):
+    """
+    deletes an entry from the login list
+
+    """
+    login.delete_login()
+
 
 
