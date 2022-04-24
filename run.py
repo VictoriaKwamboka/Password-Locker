@@ -55,5 +55,18 @@ def delete_login(login):
     """
     login.delete_login()
 
+def find_login(platform):
+    """
+    find login details using platform name
+    """
+    return LogIn.find_login(platform)
+def check_truthy_login(platform):
+    """
+   returns true if an account exists with that platform name and false otherwise
+
+    """
+    return LogIn.truthy_login(platform)
+
+
 
 
