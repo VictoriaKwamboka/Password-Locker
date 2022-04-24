@@ -81,6 +81,18 @@ class LogIn():
         '''
         found_login = LogIn.find_login(platform)
         pyperclip.copy(found_login.password)
+
+    @classmethod
+    def truthy_login(cls, platform):
+        ''''
+        truthy method that returns true if the log in exists otherwise returns false
+        '''
+        for login in cls.logins:
+            if login.platform == platform:
+                return True
+        return False
+
+
     
   
     
