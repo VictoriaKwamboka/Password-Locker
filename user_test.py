@@ -83,7 +83,8 @@ class TestLogins(unittest.TestCase):
 
         
         self.new_login.delete_login()
-        self.assertEqual(len(LogIn.logins),0)
+        self.assertEqual(len(LogIn.logins),1)
+        
 
 
 
