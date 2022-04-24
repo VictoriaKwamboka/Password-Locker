@@ -44,9 +44,18 @@ class TestLogins(unittest.TestCase):
         '''
         self.new_login = LogIn('Twitter', 'VickyMonari','nji@hj890')
     def test_init(self):
+        '''
+        method to check proper initialization
+        '''
         self.assertEqual(self.new_login.platform,'Twitter' )
         self.assertEqual(self.new_login.username,'VickyMonari')
         self.assertEqual(self.new_login.password,'nji@hj890')
+    def test_save_login(self):
+        '''
+        check if log in has been saved to the logins list
+        '''
+        self.new_login.save_login()
+        self.assertEqual(len(LogIn.logins),1)
 
    
 

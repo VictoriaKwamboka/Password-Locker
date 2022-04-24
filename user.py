@@ -56,5 +56,10 @@ class LogIn():
         self.platform = platform
         self.username = username
         self.password = password
-        
+    def save_login(self):
+        '''
+        method to save log in details of a user
+        '''
+        LogIn.logins.append(self)
+
     
