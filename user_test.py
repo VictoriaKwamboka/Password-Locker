@@ -1,5 +1,6 @@
 import unittest
 from user import User
+from user import LogIn
 
 class Testclass(unittest.TestCase):
     '''
@@ -33,6 +34,17 @@ class Testclass(unittest.TestCase):
         '''
         self.new_user.save_user()
         self.assertEqual(len(User.list_of_users), 1)
+class TestLogins(unittest.TestCase):
+    '''
+    define test cases for the logins class
+    '''
+    def setUp(self):
+        '''
+        set up each test case before running
+        '''
+        self.new_login = LogIn('Twitter', 'VickyMonari','nji@hj890')
+
+   
 
 
 
