@@ -15,3 +15,33 @@ This project helps one to:
 5. Delete account details
 6. View multiple log in details for the user.
 
+
+
+## Installation / Setup instruction
+
+#### The application requires the following installed :
+
+* python3 and above
+* pyperclip
+* pip
+
+#### Cloning
+
+* Open Terminal
+
+* git clone ```https://github.com/VictoriaKwamboka/Password_Locker.git```
+
+* cd Password_Locker
+
+* open your preferred code editor(VSCode, Atom, Sublime, etc)
+
+### Running the Application
+* To run the application, open the cloned file in terminal and run the following commands:
+
+        $ python3 run.py
+       
+* To run test for the application
+        $ python3 user_test.py
+* To run the class module:
+        $ python3 user.py
+
