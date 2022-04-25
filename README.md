@@ -61,6 +61,6 @@ If you have anything to add to make this project awesome, please email me at [vi
 
 ## License
 * *MIT License:*
-* Copyright (c) 2022 **Miss Victoria**
+* &copy;2022 **Miss Victoria**
 
 
