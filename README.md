@@ -8,18 +8,18 @@
 
 This project helps one to:
 
-1. Signing up a new account or platform.
+1. Sign up a new account or platform.
 2. Allow user to create a preferred password.
 3. Generate random passwords for the user using ASCII codes
 4. Save the log in details for various accounts/platforms.
-5. Delete account details
+5. Delete account details.
 6. View multiple log in details for the user.
 
 
 
 ## Installation / Setup instruction
 
-#### The application requires the following installed :
+#### The application requires the following dependencies installed :
 
 * python3 and above
 * pyperclip
@@ -48,4 +48,7 @@ This project helps one to:
 
         $ python3 user.py
 
+
+## Technologies Used
+* Python 3.8
 
