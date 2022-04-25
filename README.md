@@ -52,3 +52,15 @@ This project helps one to:
 ## Technologies Used
 * Python 3.8
 
+## Known Bugs
+* Pyperclip has since failed to install on Mac. I will seek to sort it in the near future.
+
+## Contact Information 
+
+If you have anything to add to make this project awesome, please email me at [victoria.kwamboka@student.moringaschool.com]
+
+## License
+* *MIT License:*
+* Copyright (c) 2022 **Miss Victoria**
+
+
