@@ -6,47 +6,62 @@ Not even stack overflow could help.
 # !/usr/bin/python3
 
 '''
+# from platform import platform
 from platform import platform
 from user import LogIn, User
+
 
 def add_new_user(username, password):
     '''
     creates a new user with username and password attributes
     '''
-    new_user = User(username,password)
+    new_user = User(username, password)
     return new_user
+
+
 def save_user(user):
     '''
     saves the user
     '''
     user.save_user()
+
+
 def display_user():
     '''
     display existing users
     '''
     return User.display_users()
+
+
 def valid_user(username, password):
     '''
     allows an existing user to log in
     '''
-    login_user = LogIn.valid_user(username,password)
+    login_user = LogIn.valid_user(username, password)
     return login_user
+
+
 def add_new_login(platform, username, password):
     '''
     adds log in details for a new user
     '''
     new_login = LogIn(platform, username, password)
     return new_login
+
+
 def save_new_login(login):
     '''
     saves a new log in to the list of log ins
     '''
     login.save_login()
+
+
 def display_login_details():
     """
     returns all saved login details
     """
     return LogIn.display_logins()
+
 
 def delete_login(login):
     """
@@ -55,23 +70,30 @@ def delete_login(login):
     """
     login.delete_login()
 
+
 def find_login(platform):
     """
     find login details using platform name
     """
     return LogIn.find_login(platform)
+
+
 def check_truthy_login(platform):
     """
    returns true if an account exists with that platform name and false otherwise
 
     """
     return LogIn.truthy_login(platform)
+
+
 def gen_password():
     '''
     generates a random password for the user.
     '''
-    rand_password=LogIn.generate_password()
+    rand_password = LogIn.generate_password()
     return rand_password
+
+
 def copy_password(platform):
     """
     copies the password using pyperclip module
@@ -79,5 +101,21 @@ def copy_password(platform):
     return LogIn.copy_password(platform)
 
 
+def Password_locker():
+    '''
+    Define a function to run the Pasword locker
 
+    '''
 
+    print("Hello Welcome to your Accounts Password Locker...\n Please enter one of the following to proceed.\n NEW ---  To Create A New Account  \n OLD ---  Already Have An Existing Account  \n")
+    short_code = input("").lower().strip()
+
+    if short_code == 'new':
+        print('Sign Up for a new account:')
+        print('_' * 65)
+
+        username = input
+    
+
+if __name__ == '__main__':
+    passlocker()
