@@ -29,19 +29,23 @@ This project helps one to:
 
 * Open Terminal
 
-* git clone ```https://github.com/VictoriaKwamboka/Password_Locker.git```
+* git clone ```https://github.com/VictoriaKwamboka/Password-Locker.git```
 
 * cd Password_Locker
 
 * open your preferred code editor(VSCode, Atom, Sublime, etc)
 
-### Running the Application
+### Running the application
 * To run the application, open the cloned file in terminal and run the following commands:
 
         $ python3 run.py
        
 * To run test for the application
+
         $ python3 user_test.py
+
 * To run the class module:
+
         $ python3 user.py
+
 
